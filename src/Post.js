@@ -9,8 +9,8 @@ export const Post = ({ pagination, arr, searchData
         <div>
             <div className="row row-cols-1 row-cols-3 p-4">
                 {
-                     arr.map(cur => (
-                        <div className="col p-2" key={cur.age}>
+                     arr.map((cur, id) => (
+                        <div className="col p-2" key={id}>
                             <div className="card h-100">
                                 <div className="card-body">
                                     <p>{cur.name}</p>
